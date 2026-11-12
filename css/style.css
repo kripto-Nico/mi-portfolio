@@ -1,0 +1,81 @@
+/*Estilos generales*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0f172a;
+  color: white;
+  line-height: 1.6;
+}
+/*Cabecera*/
+header {
+  text-align: center;
+  padding: 70px 20px;
+  bacground-color: #1e293b;
+}
+header h1 {
+  font-size: 2.5rem;
+  color: #38bdf8;
+}
+header p {
+  margin-top: 10px;
+  color: #cbd5e1;
+}
+/*Barra de navegación*/
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 20px;
+  background-color: #020617;
+}
+nav a {
+  color: #f1f5f9;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #38bdf8;
+}
+/*Contenido*/
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 20px;
+}
+section {
+  padding: 40px 20px;
+  margin-bottom: 20px;
+  background-color: #1e293b;
+  border-radius: 12px;
+}
+section h2 {
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
+/*Pie de página*/
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: #020617;
+  color: #cbd5e1;
+}
+/*Diseño responsive*/
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  nav {
+    gap: 15px;
+  }
+  main {
+    padding: 15px;
+  }
+}
