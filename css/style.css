@@ -16,33 +16,42 @@ body {
 /*Cabecera*/
 header {
   text-align: center;
-  padding: 70px 20px;
-  bacground-color: #1e293b;
+  padding: 90px 20px;
+  bacground: linear-gradient(135deg, #020617, #1e3a5f);
+  border-bottom: 3px solid #38bdf8;
 }
 header h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #38bdf8;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
 }
 header p {
   margin-top: 10px;
   color: #cbd5e1;
+  font-size: 1.2rem;
 }
-/*Barra de navegación*/
+/*Navegación*/
 nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 25px;
-  padding: 20px;
+  gap: 30px;
+  padding: 22px;
   background-color: #020617;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 nav a {
   color: #f1f5f9;
   text-decoration: none;
-  transition: color 0.3s;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
 }
 nav a:hover {
   color: #38bdf8;
+  transform: translateY(-3px);
 }
 /*Contenido*/
 main {
@@ -52,13 +61,26 @@ main {
 }
 section {
   padding: 40px 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   background-color: #1e293b;
   border-radius: 12px;
+  border: 1px solid #334155;
+  transition: border-color 0.3s, transform 0.3s;
+}
+section:hover {
+  border-color: #38bdf8;
 }
 section h2 {
   color: #38bdf8;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #334155;
+  font-size: 1.8rem;
+}
+section p {
+  margin-bottom: 15px;
+  color: #cbd5e1;
+  line-height: 1.8;
 }
 /*Pie de página*/
 footer {
@@ -69,55 +91,39 @@ footer {
 }
 /*Diseño responsive*/
 @media (max-width: 600px) {
+  header {
+    padding: 55px 15px;
+  }
   header h1 {
     font-size: 1.8rem;
   }
+  header p {
+    font-size: 1rem;
+  }
   nav {
     gap: 15px;
+    padding: 15px 10px;
+  }
+  nav a {
+    font-size: 0.9rem;
   }
   main {
     padding: 15px;
   }
+  section {
+    padding: 25px 18px;
+  }
+  section h2 {
+    font-size: 1.5rem;
+  }
 }
 /*Proyectos*/
 .projects-container {
-  display: grid;
-  grid-template-column: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-.project-card {
-  background-color: #334155;
-  padding: 25px;
-  border-radius: 12px;
-  transition: transform 0.3s, background-color: 0.3s;
-}
-.project-card:hover {
-  transform: translateY(-5px);
-  background-color: #475569;
-}
-.project-card h3 {
-  color: #38bdf8;
-  margin-bottom: 15px;
-}
-.project-card p {
-  margin-bottom: 12px;
+  grid-template-columns: 1fr;
 }
 /*Habilidades*/
 .skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-.skill {
-  background-color: #334155;
-  color: #38bdf8;
-  padding: 12px 20px;
-  border-radius: 25px;
-  transition: transform 0.3s, background-color 0.3s;
-}
-.skill:hover {
-  transform: scale(1.05);
-  background-color: #475569;
+  gap: 10px;
 }
 /*Enlaces de contacto*/
 #contacto a {
