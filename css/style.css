@@ -117,10 +117,40 @@ footer {
   section h2 {
     font-size: 1.5rem;
   }
+  .project-container {
+    grid-template-columns: 1fr;
+  }
+  .project-card {
+    padding: 20px;
+  }
 }
 /*Proyectos*/
 .projects-container {
-  grid-template-columns: 1fr;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+.project-card {
+  background-color: #101c32;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 25px;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: #38bdf8;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+.project-card h3 {
+  color: #38bdf8;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+.project-card strong {
+  color: white;
 }
 /*Habilidades*/
 .skills-container {
