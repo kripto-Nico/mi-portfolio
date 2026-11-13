@@ -123,7 +123,26 @@ footer {
 }
 /*Habilidades*/
 .skills-container {
-  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 25px;
+}
+.skill {
+  background: #101c32;
+  color: #38bdf8;
+  border: 1px solid #38bdf8;
+  padding: 12px 18px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.skill:hover {
+  background: #38bdf8;
+  color: #101c32;
+  transform: translateY(-4px);
+  box-shadow: 0 5px 15px rgba(56, 189, 248, 0.25);
 }
 /*Enlaces de contacto*/
 #contacto a {
