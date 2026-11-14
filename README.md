@@ -21,4 +21,4 @@ Todo el contenido tiene un diseño moderno y responsive.
 
 ## 📸 Vista previa
 
-![Captura del portfolio de Rares Nicolae Talos](img/captura-portfolio.png)
+![Captura del portfolio de Rares Nicolae Talos](img/captura-portfolio.PNG)
