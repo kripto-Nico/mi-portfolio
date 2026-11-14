@@ -167,6 +167,11 @@ footer {
 }
 
 /*Diseño responsive*/
+@media (max-width: 850px) {
+  .projects-container {
+    gri-template-columns: (2, 1fr);
+  }
+}
 @media (max-width: 600px) {
   header {
     padding: 55px 15px;
